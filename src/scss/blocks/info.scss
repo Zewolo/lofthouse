@@ -1,0 +1,17 @@
+.info {
+	position: relative;
+	font-size: 18px;
+
+	&::before {
+		content: '';
+
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 21px;
+		height: 21px;
+
+		background-image: url('./../../../public/images/header/map.svg');
+		background-repeat: no-repeat;
+	}
+}
