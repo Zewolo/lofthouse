@@ -2,16 +2,33 @@
 	position: relative;
 	font-size: 18px;
 
-	&::before {
-		content: '';
+	&--map, &--tel {
+		padding-left: 35px;
 
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 21px;
-		height: 21px;
+		&::before {
+			content: '';
 
-		background-image: url('./../../../public/images/header/map.svg');
-		background-repeat: no-repeat;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 21px;
+			height: 21px;
+
+			background-repeat: no-repeat;
+		}
 	}
+
+	&--map::before {
+		background-image: url('./../../../public/images/header/map.svg');
+	}
+
+	&--tel::before {
+		background-image: url('./../../../public/images/header/phone.svg');
+	}
+}
+
+.header__footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
 }
